@@ -1,0 +1,9 @@
+schema: https://api.crm.refine.dev/graphql
+documents: "src/**/*.{ts,tsx}"
+generates:
+  src/graphql/types.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+    config:
+      skipTypename: true
